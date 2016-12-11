@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MyPlaylist</title>
+<style>
+body{
+background-image:url(redscreen.jpg);
+}
+</style>
+</head>
+<body>
+<textarea rows="1" cols="75" id="myTextarea1">
+Awake And Alive Skillet 3:32</textarea>
+<button type="button" onclick="myFunction1()">Try it</button>
+<textarea rows="1" cols="75" id="myTextarea2">
+Centuries Fall Out Boy 3:52</textarea>
+<button type="button" onclick="myFunction2()">Try it</button>
+<textarea rows="1" cols="75" id="myTextarea3">
+Crawling Linkin Park 3:31</textarea>
+<button type="button" onclick="myFunction3()">Try it</button>
+<textarea rows="1" cols="75" id="myTextarea4">
+In the End Linkin Park 3:36</textarea>
+<button type="button" onclick="myFunction4()">Try it</button>
+<textarea rows="1" cols="75" id="myTextarea5">
+Numb Linkin Park 4:04</textarea>
+<button type="button" onclick="myFunction5()">Try it</button>
+<textarea rows="1" cols="75" id="myTextarea6">
+Whispers in the dark Skillet 3:26</textarea>
+<button type="button" onclick="myFunction6()">Try it</button>
+<script>
+function myFunction1() {
+    //var str = document.getElementById("myTextarea2").value;
+    document.getElementById('myField1').value = "Awake And Alive";
+    document.getElementById('myField2').value = "Skillet";
+    document.getElementById('myField3').value = "3:32";
+
+}
+<!--Centuries Fall Out Boy 588-->
+function myFunction2() {
+    //var str = document.getElementById("myTextarea2").value;
+    document.getElementById('myField1').value = "Centuries";
+    document.getElementById('myField2').value = "Fall Out Boy";
+    document.getElementById('myField3').value = "3:52";
+
+}
+function myFunction3() {
+    //var str = document.getElementById("myTextarea2").value;
+    document.getElementById('myField1').value = "Crawling";
+    document.getElementById('myField2').value = "Linkin Park";
+    document.getElementById('myField3').value = "3:31";
+
+}
+function myFunction4() {
+    //var str = document.getElementById("myTextarea2").value;
+    document.getElementById('myField1').value = "In the End";
+    document.getElementById('myField2').value = "Linkin Park";
+    document.getElementById('myField3').value = "3:36";
+
+}
+function myFunction5() {
+    //var str = document.getElementById("myTextarea2").value;
+    document.getElementById('myField1').value = "Numb";
+    document.getElementById('myField2').value = "Linkin Park";
+    document.getElementById('myField3').value = "3:52";
+
+}
+<!--Whispers in the dark Skillet 480-->
+function myFunction6() {
+    //var str = document.getElementById("myTextarea1").value;
+    document.getElementById('myField1').value = "Whispers in the Dark";
+    document.getElementById('myField2').value = "Skillet";
+    document.getElementById('myField3').value = "3:26";
+	
+}
+</script>
+<form action="add_songs.jsp" method="get" >
+
+<p><font face="Monotype Corsiva" size="5" color="#FFFF00">Enter song name</font></p>
+<input type=text name=value1 id =myField1 value=""><br>
+<p><font face="Monotype Corsiva" size="5" color="#FFFF00">Enter artist name</font></p>
+<input type=text name=value2 id =myField2 value=""><br>
+<p><font face="Monotype Corsiva" size="5" color="#FFFF00">Enter duration of song</font></p>
+<input type=text name=value3 id =myField3 value=""><br>
+<input type=submit name=Add value=Add>
+</form>
+<form action="display_songs.jsp" method="get">
+<input type=submit name=SHowMyPlaylist value=ShowMyPlaylist>
+</form>
+<form action="play_songs.jsp" method="get">
+<input type=submit name=PlayMySongs value=PlayMySongs>
+</form>
+<!-- 
+<form action="instaplay.jsp" name=valueinsta >
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+  <option value="Awake And Alive">
+  <option value="Centuries">
+  <option value="Crawling">
+  <option value="In the End">
+  <option value="Numb">
+  <option value="Whispers In The Dark">
+
+  </datalist>
+  <input type="submit">
+</form>
+-->
+</body>
+</html>
