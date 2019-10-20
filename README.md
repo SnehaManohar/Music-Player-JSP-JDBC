@@ -1,2 +1,2 @@
-# dbmsjspproj
-Basic code for creating an online playlist maker using jsp and jdbc
+# Music-Player-JSP-JDBC
+Basic code for a playlist maker using jsp and jdbc
